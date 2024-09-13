@@ -4,9 +4,19 @@ h1{
 }
 p{
 	font-size: small;
+	color: wheat;
+}
+li{
+	color:wheat
 }
 .title{
 	color:green;
 	font-size: 90px;
 	text-align: center;
+}
+body{
+	background-image:image-set("Schermafbeelding 2024-09-12 114012.png");
+}
+.by_text{
+	color: black;
 }
