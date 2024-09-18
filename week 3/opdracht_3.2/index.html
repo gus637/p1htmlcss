@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TUI bookings formulier</title>
+</head>
+<body>
+	<h1>Bookings formulier</h1>
+	<form action="">
+		<label for="firstname">Voornaam</label>
+		<input type="text" name="firstname" pattern="[a-z]-[A-Z]" autofocus>
+		<br><br>
+
+		<label for="lastname">Achternaam</label>
+		<input type="text" name="lastname" pattern="[a-z]-[A-Z]">
+		<br><br>
+
+		<label for="gender">Geslacht</label>
+		<input type="radio" name="gender" value="man" checked>
+		<label for="gender">man</label>
+		<input type="radio" name="gender" value="vrouw">
+		<label for="gender">vrouw</label>
+		<br><br>
+
+		<label for="street">Straat</label>
+		<input type="text" name="street">
+		<label for="street">huis nummer</label>
+		<input type="number" min="0">
+		<br><br>
+
+		<label for="postalAbres">Postcode</label>
+		<input type="text">
+		<br><br>
+
+		<label for="city">Stad</label>
+		<input type="text">
+		<br><br>
+
+		<label for="contry">Land</label>
+		<input type="text" name="contry">
+		<br><br>
+
+		<label for="BSN">BSN-nummer</label>
+		<input type="number" name="BSN" maxlength="9">
+		<br><br>
+
+		<label for="VContry">Vakantieland:</label><br>
+		<input type="radio" name="VContry"><label for="VContry">Portugal</label><br>
+		<input type="radio" name="VContry"><label for="VContry">Frankrijk</label><br>
+		<input type="radio" name="VContry"><label for="VContry">USA</label><br>
+		<br>
+
+		<label for="DLeve">Datum vertrek</label>
+		<input type="date" name="DLeve" min="2024-9-18">
+		<br><br>
+
+		<label for="DReturn">Datum herkomst</label>
+		<input type="date" name="DReturn">
+		<br><br>
+
+		<label for="NCofligers">Aantal reisgenoten</label>
+		<input type="number" name="NCofligers" min="0" max="4">
+		<br><br>
+
+		<input type="submit" value="Boek nu">
+		<br><br>
+		<label for="new_acount">make een acount aan</label><br>
+		<label for="new_acount">E-mail</label>
+		<input type="email" name="new_acount"><br>
+		<label for="new_acount">wachtwoord</label>
+		<input type="password" name="new_acount">
+
+
+
+	</form>
+</body>
+</html>
