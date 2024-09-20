@@ -37,3 +37,18 @@ nav a {
 nav img {
   width: 5vw;
 }
+.background{
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-image: url(img/background.jpeg);
+  background-color: black;
+}
+.style1{
+  color: white;
+  text-align: center;
+  left: 50%;
+  font-size: 50px;
+  top: 50%;
+  position: absolute;
+  transform:translate(-50%, -50%)
+}
