@@ -37,13 +37,22 @@ nav a {
 nav img {
   width: 5vw;
 }
-.background{
+div.parrent div{
+  float: left;
+  padding: 10em;
+  padding-top: 0em;
+  padding-right: 5em;
+}
+div.parrent div img{
+  transform: translate(0%, -4em);
+}
+.background_home{
   background-size:100%;
   background-repeat:no-repeat;
   background-image: url(img/background.jpeg);
   background-color: black;
 }
-.style1{
+.home_page{
   color: white;
   text-align: center;
   left: 50%;
@@ -51,4 +60,72 @@ nav img {
   top: 50%;
   position: absolute;
   transform:translate(-50%, -50%)
+}
+body.background_black{
+  background-color: black;
+}
+body.background_black h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body.background_black h2{
+  color: white;
+  font-size: 25px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body.background_white{
+  background-color: white;
+}
+body.background_white h1{
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body.background_white h2{
+  color: black;
+  text-align: left;
+  font-size: 15px;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.blue{
+  color: blue;
+  white-space: nowrap;
+}
+.red{
+  color: red;
+  white-space: nowrap;
+}
+.yellow{
+  color: rgb(255, 242, 1);
+}
+.purrpel{
+  color: rgb(0, 0, 93);
+}
+.orange{
+  color: rgb(255, 119, 0);
+}
+h1.nowrap{
+  white-space: nowrap;
+}
+body.background_black p{
+  color: white;
+}
+p{
+  width:fit-content;
+  padding: 0em;
+}
+h1{
+  text-align: center;
+}
+form *{
+  position: relative;;
+  left: 20%
 }
