@@ -3,132 +3,213 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
-body {
-  font-family: "Goldman", cursive;
+header{
+  position: static;
+  height: fit-content;
 }
-
+main{
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  max-height: fit-content(80%);
+}
+body{
+  font-family: "Goldman", cursive;
+  min-width: 100vw;
+  min-height: 100vh;
+  position:absolute;
+}
 nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   padding: 2rem;
   min-height: 10vh;
+  max-height: 13vh;
   align-items: center;
   flex-wrap: wrap;
-  margin: auto;
+  margin-bottom: auto;
   background: #00a8c7;
   justify-content: space-between;
+  position:fixed;
+  top: 0%;
 }
+
 nav ul {
   display: flex;
   align-items: center;
-  list-style-type: none;
+  list-style: none;
+  position: relative;
+  top: 50%;
 }
+
 nav li {
   font-size: 2.5rem;
-  padding: 0 4rem 0 4rem;
+  padding: 0 4rem;
 }
+
 nav a {
   color: white;
   text-decoration: none;
 }
+
 nav img {
   width: 5vw;
 }
-div.parrent div{
+footer{
+  position: fixed;
+  background-color: #00a8c7;
+  width: 100vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  top: 90vh;
+}
+footer p{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -10em 70%;
+}
+div.parent{
+  position: relative;
+  left: 0%;
+  top: 50%;
+}
+div.parent div {
   width: 50vw;
   height: fit-content;
   float: left;
-  padding: 10em;
-  padding-top: 0em;
-  padding-right: 5em;
+  padding-top: 4vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 0;
+  top: 50%;
+  left: 0%;
 }
-div.parrent div img{
+
+div.parent div img {
+  width: 40vw;
+  top: 50%;
+  left: 50%;
+}
+div.parent div img.html{
   width: 30vw;
   transform: translate(0%, -4em);
+  top: 50%;
+  left: 50%
 }
-.background_home{
-  background-size:100vw;
-  background-repeat:no-repeat;
+div.parent div img.java{
+  width: 20vw;
+  position: relative;
+  transform: translate(0%, 0%);
+}
+.background_home {
+  background-size: 100vw;
+  background-repeat: no-repeat;
   background-image: url(img/background.jpeg);
   background-color: black;
 }
-.home_page{
+
+.home_page {
   color: white;
   text-align: center;
-  left: 50%;
   font-size: 3.5vw;
-  top: 50%;
   position: absolute;
-  transform:translate(-50%, -50%)
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-body.background_black{
+
+body.background_black {
   background-color: black;
 }
-body.background_black h1{
+
+body.background_black h1 {
   color: white;
   text-align: center;
   font-size: 40px;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 0;
+  font-weight: bold;
+  position: relative;
+  top: 1.5em;
+  
 }
-body.background_black h2{
+
+body.background_black h2 {
   color: white;
   font-size: 25px;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 0;
 }
-body.background_white{
+
+body.background_black p {
+  color: white;
+}
+
+body.background_white {
   background-color: white;
 }
-body.background_white h1{
+
+body.background_white h1 {
+  margin-top: auto;
   color: black;
   text-align: center;
   font-size: 40px;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 0;
+  font-weight: bold;
+  position: relative;
+  top: 1.5em;
 }
-body.background_white h2{
+
+body.background_white h2 {
   color: black;
   text-align: left;
   font-size: 15px;
-  padding-top: 0em;
-  padding-bottom: 0em;
 }
 
-.blue{
+.blue {
   color: blue;
   white-space: nowrap;
 }
-.red{
+
+.red {
   color: red;
   white-space: nowrap;
 }
-.yellow{
+
+.yellow {
   color: rgb(255, 242, 1);
 }
-.purrpel{
+
+.purple {
   color: rgb(0, 0, 93);
 }
-.orange{
+
+.orange {
   color: rgb(255, 119, 0);
 }
-h1.nowrap{
+
+h1.nowrap {
   white-space: nowrap;
+  font-size: 20px;
+  padding-bottom: 1vh;
 }
-body.background_black p{
-  color: white;
+
+p {
+  width: fit-content;
+  padding: 0;
+  font-size: 15px;
 }
-p{
-  width:fit-content;
-  padding: 0em;
-}
-h1{
+
+h1 {
   text-align: center;
 }
-form *{
-  position: relative;;
-  left: 20%
+
+form * {
+  position: relative;
+  left: 20%;
 }
