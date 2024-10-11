@@ -38,24 +38,37 @@ nav {
   position:fixed;
   top: 0%;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  position: relative;
-  top: 50%;
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    top: 50%;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 2rem;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5rem;
 }
-nav li {
-  font-size: 2.5rem;
-  padding: 0 2rem;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-}
-nav img {
-  width: 5rem;
-}
+    /*dropdown*/
+    nav ul li.dropdown{
+      
+    }
+    li.dropdown div{
+      background-color: white;
+      z-index: 1;
+      min-width: 20vw;
+    }
+    li.dropdown a{
+
+    }
+/* footer*/
 footer{
   position: fixed;
   background-color: #00a8c7;
@@ -64,15 +77,15 @@ footer{
   max-height: 10vh;
   top: 90vh;
 }
-footer p{
-  font-size: 2.5rem;
-  color: white;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  translate: -10em 70%;
-}
+  footer p{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -10em 70%;
+  }
 
 /* parent div*/
 div.parent{
@@ -80,45 +93,45 @@ div.parent{
   left: 0%;
   top: 25%;
 }
-div.parent div {
-  width: 50vw;
-  height: fit-content;
-  float: left;
-  padding-top: 4vh;
-  padding-left: 8vw;
-  padding-right: 8vw;
-  padding-bottom: 0;
-  top: 50rem;
-  left: 0rem;
-}
-div.parent div.fix-left{
-  position: fixed;
-  top: 30%;
-  left: 10%;
-}
-div.parent div.fix-richt{
-  position: fixed;
-  top: 25%;
-  left:40%;
-}
-div.parent div img {
-  width: 40vw;
-  top: 50%;
-  left: 50%;
-}
-div.parent div img.html{
-  float: left;
-  width: 25vw;
-  transform: translate(0%, -4em);
-  top: 50rem;
-  left: 50rem;
-}
-div.parent div img.java{
-  width: 20vw;
-  position: relative;
-  transform: translate(0%, 0%);
-  left: 0%;
-}
+  div.parent div {
+    width: 50vw;
+    height: fit-content;
+    float: left;
+    padding-top: 4vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 0;
+    top: 50rem;
+    left: 0rem;
+  }
+    div.parent div.fix-left{
+      position: fixed;
+      top: 30%;
+      left: 10%;
+    }
+    div.parent div.fix-richt{
+      position: fixed;
+      top: 25%;
+      left:40%;
+    }
+    div.parent div img {
+      width: 40vw;
+      top: 50%;
+      left: 50%;
+    }
+    div.parent div img.html{
+      float: left;
+      width: 25vw;
+      transform: translate(0%, -4em);
+      top: 50rem;
+      left: 50rem;
+    }
+    div.parent div img.java{
+      width: 20vw;
+      position: relative;
+      transform: translate(0%, 0%);
+      left: 0%;
+    }
 
 /* 
     background 
