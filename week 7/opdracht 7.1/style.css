@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100vw;
+	color: white;
+}
+.bropdown{
+	display:none;
+}
+/*laptops*/
+@media all and (min-width: 1000px) {
+
+	nav{
+		position: fixed;
+		background-color: #ea4d4b;
+		color: white;
+		top: 0;
+		left: 0;
+		height: 11vh;
+		font-size: 100%;
+	}
+	nav h1{
+		top: 50%;
+		left: 5%;
+		transform: translate(0, -50%);
+	}
+	main{
+		position: fixed;
+		top: 11vh; 
+		width: 100vw; height: 90vh;
+		min-height: 89vh;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+	}
+	div{
+		min-height: 33%;
+	}
+	div *{
+		color: black;
+	}
+	.d1{
+		background-color: #f9ca22;
+	}
+	.d2{
+		background-color: #f0922b;
+	}
+	.d3{
+		background-color: #69b04c;
+	}
+}
+/*tablets*/
+@media all and (min-width: 500px) and (max-width: 1000px){
+	nav{
+		z-index: 1;
+		position: fixed;
+		background-color: #ff6b81;
+		color: white;
+		top: 0;
+		left: 0;
+		height: 7.5vh;
+		font-size: 100%;
+		text-align: center;
+	}
+	nav h1{
+		top:50%;
+		transform: translate(0, -50%);
+		font-size: 2.5em;
+	}
+	main{
+		position: fixed;
+		top: 7.5vh; 
+		width: 100vw; height: 90vh;
+		min-height: 93.5vh;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+	}
+	main div{
+		min-height: 33%;
+	}
+	.d1{
+		background-color: #fe4657;
+	}
+	.d2{
+		background-color: #5352ec;
+	}
+	.d3{
+		background-color: #3742f9;
+	}
+}
+@media all and (max-width: 500px) {
+	nav{
+		position: fixed;
+		background-color: #686de0;
+		top: 0;
+		left: 0;
+		height: 11vh;
+		font-size: 100%;
+	}
+	nav h1{
+		font-size: 200%;
+		top: 50%;
+		left: 5%;
+		transform: translate(0, -50%);
+	}
+	.dropdown{
+		display: flex;
+		position: absolute;
+		top: 30%; right: 10%;
+		width: 2.5em; height: 2.5em;
+		background-color: white;
+	}
+	main{
+		position: fixed;
+		top: 11vh; 
+		width: 100vw; height: 90vh;
+		min-height: 90vh;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+	}
+	main div{
+		min-height: 33%;
+	}
+	.d1{
+		background-color: #7ed6df;
+	}
+	.d2{
+		background-color: #e056fd;
+	}
+	.d3{
+		background-color:#30336a;
+	}
+}
